@@ -5,6 +5,8 @@ const port = process.env.PORT || 5000;
 const mongoose = require('mongoose');
 const expressJwt = require('express-jwt');
 const path = require('path');
+const secret = process.env.SECRET || "some secret passphrase here for local development"
+
 
 app.use(express.json());
 app.use('/api', expressJwt({secret: process.env.SECRET}));
@@ -19,7 +21,7 @@ app.use((err, req, res, next) => {
     return res.send({message: err.message});
 })
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/noted', {useNewUrlParser: true}).then(() => {
+mongoose.connect(process.env.mongolab-contoured-55016 || 'mongodb://localhost:27017/noted', {useNewUrlParser: true}).then(() => {
     console.log('Connected to MongoDB')
 }).catch(err => console.log(err));
 
