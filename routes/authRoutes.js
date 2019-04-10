@@ -39,6 +39,4 @@ authRoute.post('/login', (req, res, next) => {
     });
 });
 
-
-
 module.exports = authRoute
