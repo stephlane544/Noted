@@ -25,6 +25,7 @@ authRoute.post('/signup', (req, res, next) => {
     });
 });
 
+
 authRoute.post('/login', (req, res, next) => {
     console.log(req.body)
     User.findOne({username: req.body.username.toLowerCase()}, (err, user) => {
