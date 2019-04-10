@@ -8,10 +8,12 @@ const path = require('path');
 
 
 app.use(express.json());
+app.use(express.static(path.join(__dirname, 'client', 'build')));
+
 app.use('/api', expressJwt({secret: process.env.SECRET}));
 app.use('/api', require('./routes/apiRoutes'));
 app.use('/auth', require('./routes/authRoutes'));
-app.use(express.static(path.join(__dirname, 'client', 'build')));
+
 
 
 // mongodb://heroku_39vqgsgh:jjti3k4e3nth6csf08qnvggcdm@ds125673.mlab.com:25673/heroku_39vqgsgh
