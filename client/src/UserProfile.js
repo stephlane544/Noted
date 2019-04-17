@@ -70,7 +70,7 @@ class UserProfile extends Component {
                             </div>
                         </div>
                         <div className='profileEdit'>
-                            <img onClick={this.toggleEdit} className='editPage' src="https://img.icons8.com/dotty/80/000000/edit.png" alt=''></img>
+                            <img onClick={this.toggleEdit} className='editPage edit' src="https://img.icons8.com/dotty/80/000000/edit.png" alt=''></img>
                         </div>
                     </>
                 :
@@ -96,7 +96,7 @@ class UserProfile extends Component {
                             name='username'
                             value={this.state.username}
                             onChange={this.handleChange} />
-                        <button className='saveUserButton'><img className='saveNote' src="https://img.icons8.com/wired/64/000000/save-as.png" alt='' /></button>
+                        <button className='saveUserButton save'><img className='saveNote' src="https://img.icons8.com/wired/64/000000/save-as.png" alt='' /></button>
                     </form> 
                 }
             </>
