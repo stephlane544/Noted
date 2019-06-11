@@ -4,8 +4,8 @@
     background-image: linear-gradient(#4a6ba2, white);
     display: grid;
     grid-gap: 2%;
-    grid-template-columns: 2fr 4fr 1fr 1fr  1fr 1fr 1fr;
-    font-size: 30px;
+    grid-template-columns: 2fr 4fr 1fr 1fr  1fr 1fr 1fr 1fr;
+    font-size: 30px; 
 }
 
 .links{
@@ -31,7 +31,7 @@
 
 .signup{
     width: 100%;
-    grid-column: 6/7;
+    grid-column: 6/8;
 } 
 
 .dashboard, .notes, .collections{
@@ -39,21 +39,21 @@
 }
 
 .dashboard{
-    grid-column: 3/4;
+    grid-column: 4/5;
 }
 
 .notes{
-    grid-column: 4/5;
-
-}
-
-.collections{
     grid-column: 5/6;
 
 }
 
-.logout{
+.collections{
     grid-column: 6/7;
+
+}
+
+.logout{
+    grid-column: 7/8;
     color: white;
     display: flex;
     flex-direction: column;

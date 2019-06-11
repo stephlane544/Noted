@@ -45,7 +45,7 @@ class Notes extends Component {
 
     render() {
         const mappedNotes = this.props.user.notes.map((note) => <DisplayNotes note={note} key={note._id}/>);
-        let img = 'https://png.pngtree.com/element_origin_min_pic/17/08/18/eb98370c6aaeb4f2d0b6a9f0fd9c6b48.jpg'
+        let img = 'https://i.pinimg.com/originals/e9/88/99/e98899b6eef240919eda4671f5b3e40e.png'
         return (
             <div className='notesGrid'>
                 {mappedNotes}
