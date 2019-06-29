@@ -1,20 +1,38 @@
+.profilePage{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 3fr 7fr 2fr;
+    grid-auto-rows: auto;
+    font-size: 30px;
+}
+
+/* .profileBackgroundColor{
+    background-color: coral;
+    grid-column: 2/3;
+    grid-row: 1/4;
+} */
+
+.profile{
+    grid-column: 2/3;
+}
+
 .profileGrid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
     font-size: 30px;
 
 }
 
 .labels{
-    grid-column: 4/5;
+    grid-column: 1/2;
+    padding-left: 13%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 .userInfo{
-    padding-left: 7%;
-    grid-column: 5/6;
+    grid-column: 2/3;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -28,12 +46,15 @@
 }
 
 .editUserForm{
+    background-color: coral;
+    grid-column: 2/3;
+    grid-row: 1/4;
     padding-top: 3%;
-    display: grid;
-    grid-auto-columns: max-content;
-    grid-auto-rows: max-content;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+    height: 130%;
     grid-gap: 30%;
 }
 
@@ -52,4 +73,10 @@
 .saveUserButton{
     border: none;
     background-color: #ecece300;
+}
+
+
+.profile, .editUserForm{
+    background-color: coral;
+    border-radius: 15px;
 }

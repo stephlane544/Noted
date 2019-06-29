@@ -54,9 +54,10 @@ class UserProfile extends Component {
     }
     render() {
         return (
-            <>
+            <div className='profilePage'>
+                <div className='profileBackgroundColor'></div>
                 {!this.state.edit ? 
-                    <>
+                    <div className='profile'>
                         <div className='profileGrid'>
                             <div className='labels'>
                                 <div className='firstName'>First Name:</div>
@@ -72,7 +73,7 @@ class UserProfile extends Component {
                         <div className='profileEdit'>
                             <img onClick={this.toggleEdit} className='editPage edit' src="https://img.icons8.com/dotty/80/000000/edit.png" alt=''></img>
                         </div>
-                    </>
+                    </div>
                 :
                     <form className='editUserForm' onSubmit={this.handleSubmit}>
                         <input 
@@ -99,7 +100,7 @@ class UserProfile extends Component {
                         <button className='saveUserButton save'><img className='saveNote' src="https://img.icons8.com/wired/64/000000/save-as.png" alt='' /></button>
                     </form> 
                 }
-            </>
+            </div>
         );
     }
 }
