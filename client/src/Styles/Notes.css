@@ -29,6 +29,7 @@
 }
 
 .createNoteForm{
+    transform: skewY(-5deg);
     display: flex;
     flex-direction: column;
     justify-content: center;

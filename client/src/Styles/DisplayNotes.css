@@ -12,6 +12,10 @@
     padding: 17%;
 }
 
+.noteContainer > div{
+    transform: skewY(-7deg);
+}
+
 .noteTitle{
     padding-top: 10%;
 }
