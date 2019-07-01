@@ -34,22 +34,21 @@
     grid-column: 6/8;
 } 
 
-.dashboard, .notes, .collections{
+.profile, .notes, .collections{
     padding-right: 5%;
 }
 
-.dashboard{
-    grid-column: 4/5;
-}
-
 .notes{
-    grid-column: 5/6;
+    grid-column: 4/5;
 
 }
 
 .collections{
-    grid-column: 6/7;
+    grid-column: 5/6;
+}
 
+.profile{
+    grid-column: 6/7;
 }
 
 .logout{
@@ -141,7 +140,7 @@
 @media (max-width: 820px){
 
 
-    .logout, .collections, .notes, .dashboard, .login, .signup{
+    .logout, .collections, .notes, .profile, .login, .signup{
         display: none;
     }
 }

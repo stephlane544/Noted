@@ -22,7 +22,7 @@ class App extends Component {
           <Route exact path='/' component={Home} />
           <Route path='/login' component={Login} />
           <Route path='/signup' component={Signup} />
-          <Route path='/userprofile' component={UserProfile} />
+          <Route path='/profile' component={UserProfile} />
           <Route path='/notes' component={Notes} />
           <Route exact path='/collections' component={Collections} />
           <Route path='/collections/:collectionId' component={ShowCollection} />

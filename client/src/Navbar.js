@@ -43,9 +43,10 @@ class Navbar extends Component {
                             <div className="dropdownContent" >
                                 {this.props.token ?
                                     <>
-                                        <a href='/userprofile' className='links dropDashboard' to='/dashboard'>Profile</a>
+                                        
                                         <a href='/notes' className='links dropNotes' to='/notes'>Notes</a>
                                         <a href='/collections' className='links dropCollections' to='/collections'>Collections</a>
+                                        <a href='/profile' className='links dropProfile' to='/profile'>Profile</a>
                                         <div onClick={this.logout} className='dropLogout'>Logout</div>
                                     </>
                                 :
@@ -61,9 +62,9 @@ class Navbar extends Component {
                 </div>
                 {this.props.token ?
                     <>
-                        <a href='/userprofile' className='links dashboard' to='/dashboard'>Profile</a>
                         <a href='/notes' className='links notes' to='/notes'>Notes</a>
                         <a href='/collections' className='links collections' to='/collections'>Collections</a>
+                        <a href='/profile' className='links profile' to='/profile'>Profile</a>
                         <div onClick={this.logout} className='logout'>Logout</div>
                     </>
                 :

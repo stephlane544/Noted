@@ -57,7 +57,7 @@ class UserProfile extends Component {
             <div className='profilePage'>
                 <div className='profileBackgroundColor'></div>
                 {!this.state.edit ? 
-                    <div className='profile'>
+                    <div className='profileContainer'>
                         <div className='profileGrid'>
                             <div className='labels'>
                                 <div className='firstName'>First Name:</div>

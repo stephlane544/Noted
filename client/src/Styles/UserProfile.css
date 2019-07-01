@@ -6,7 +6,7 @@
     font-size: 30px;
 }
 
-.profile{
+.profileContainer{
     grid-column: 2/3;
 }
 
@@ -70,7 +70,7 @@
 }
 
 
-.profile, .editUserForm{
+.profileContainer, .editUserForm{
     background-color: #f4a698;
     border-radius: 15px;
 }
