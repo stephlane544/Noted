@@ -1,16 +1,10 @@
 .profilePage{
     margin-top: 50px;
     display: grid;
-    grid-template-columns: 3fr 7fr 2fr;
+    grid-template-columns: 2fr 2fr 2fr;
     grid-auto-rows: auto;
     font-size: 30px;
 }
-
-/* .profileBackgroundColor{
-    background-color: coral;
-    grid-column: 2/3;
-    grid-row: 1/4;
-} */
 
 .profile{
     grid-column: 2/3;
@@ -25,7 +19,7 @@
 
 .labels{
     grid-column: 1/2;
-    padding-left: 13%;
+    margin-left: 13%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -46,7 +40,7 @@
 }
 
 .editUserForm{
-    background-color: coral;
+    background-color: #f4a698;
     grid-column: 2/3;
     grid-row: 1/4;
     padding-top: 3%;
@@ -59,24 +53,28 @@
 }
 
 .editUserForm > input{
-    width: 250px;
-    height: 60px;
+    width: 80%;
+    height: 30px;
     line-height: 2;
     padding: 2%;
     border-radius: 15px;
     font-size: 20px;
-    background-color: #e2dfdf;
-    border: none;
-    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;    border: none;
 }
 
 .saveUserButton{
     border: none;
     background-color: #ecece300;
+    margin-bottom: 2%;
 }
 
 
 .profile, .editUserForm{
-    background-color: coral;
+    background-color: #f4a698;
     border-radius: 15px;
+}
+
+.editPage{
+    margin-bottom:2%;
 }

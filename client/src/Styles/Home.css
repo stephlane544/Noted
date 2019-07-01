@@ -1,4 +1,26 @@
-.homeBackground{
+.homeNotes, .homeCollection{
+    display: grid;
+    grid-template-columns: 1fr 2fr 6fr 1fr;
+    grid-gap: 5%;
+    font-size: 40px;
+}
+
+.noteText, .collectionText{
+    grid-column: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+.homeNotes > img, .homeCollection > img{
+    grid-column: 3/4;
+    width: 100%;
+
+}
+
+/* .homeCollection > img{
+    width: 150%;
+} */
+
+/* .homeBackground{
     padding-top: 5%;
     display: grid;
     grid-template-columns: 1fr 15fr 1fr 15fr 1fr;
@@ -6,6 +28,8 @@
     grid-gap: 5%;
     justify-content: center;
 }
+
+
 
 .notedCentering{
     grid-column: 2/3;
@@ -143,4 +167,4 @@
         height: 100px;
         width: 100px;
     }
-}
+} */
