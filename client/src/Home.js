@@ -11,23 +11,12 @@ class Home extends Component {
                     <div className='noteText'>Make notes that you can edit or delete</div>
                     <img src={notes} alt=""/>
                 </div>
+                <div className='collectionBackground'></div>
                 <div className='homeCollection'>
                     <div className='collectionText'>Make collections of whatever you want that will look like a book with pages</div>
                     <img src={collection} alt=""/>
                 </div>
 
-
-                {/* <div className='notedCentering'>
-                    <div className='homeTitle'>Noted</div>
-                </div>
-                
-                <div className='homePostItContainer'>
-                    <img className='homePostIt' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3XSNAqDitLJqPYY3S7AeMjN4L6iMhEaCeA0E5lbqnreuc_x17" alt=""/>
-                </div>
-
-                <div className='checkMarkContainer'>
-                    <img className='homeCheckMark' src="https://img.icons8.com/ios/500/000000/checkmark-filled.png" alt=''/>
-                </div> */}
             </div>
         );
     }
